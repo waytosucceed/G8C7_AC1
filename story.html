@@ -1,0 +1,219 @@
+<html>
+    <head> <title>Class Activity 1</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="icon" type="image/x-icon" href="Logo_last.png">
+        <style>
+            p{
+                font-size:30px;
+                margin-top:10%;
+                font-weight: bold;
+            }
+
+            .maindiv{
+                border: 5px rgb(164, 246, 229) ridge;
+                border-radius: 20px;
+            }
+
+            #nextbtn, #backbtn{
+                width: 25%;
+                font-size:30px;
+                margin-right: 5%
+            }
+
+            #backbtn, #newbtn{
+                display:none;
+            }
+
+            #family{
+                width:95%;
+                height:95%;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            #about{
+                font-weight: bold;
+                font-size:40px;
+                color:rgb(7, 7, 89)
+            }
+            #story{
+             
+                font-size: 18px;
+                border-radius: 20px;
+            }
+         
+        
+        </style>
+</head>
+
+    <body> 
+        <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding-bottom:10px;">
+            <img src="Logo.png" width="5%" style="float:left; margin-top:25px;" class="img-responsive">
+            <span> <img src="header.png" width="30%" height="100px" class="img-responsive"></span>
+        </div>
+         <br>
+        <br>
+        
+        <center>
+            <h2 id="about">VERBS</h2>   
+         <div class="maindiv container">   
+            <center>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-11 imgdiv" style= "height: 450px;">
+                <img id="family" src="pic2.jpg" style="width:100%; height:90%; margin-top:5%;"> 
+            </div>
+ 
+ 
+              
+
+            
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-11" style= "height: 450px;">
+                <p id="story" style="text-align:left; width:100%; margin-top:5%;">
+
+                    We all know that “Verbs” talk about actions. Action Verbs can be
+                    further divided into two categories TRANSITIVE VERBS and
+                    INTRANSITIVE VERBS.
+                    
+                    In simple terms, Transitive Verbs are those that take objects and
+                    Intransitive Verbs are those that do not take objects. Let us look the
+                    following sentences: <br><br>
+                    1) I <span style="font-weight: bolder;">bought</span> chocolates.  <br>
+                    2) She is <span style="font-weight: bolder;">sleeping.</span> 
+                    <br><br>
+                    In the first sentences the object “chocolates” is needed to make
+                    sense of the verb “bought”. <br>
+                    In the second sentence the verb “sleeping” does not need any
+                    object to make clear sense. <br><br>
+                    Thus, the verb “bought” is a transitive verb and the verb “sleeping”
+                    is an intransitive verb.  
+
+
+
+                </p>  
+            </div>
+        </center>
+        </div>
+        <br>
+        <div class="" style="text-align:center; padding-top:1%">
+            
+            <button id="backbtn" onclick="backpic()" class="btn btn-success">Back</button>
+            <button id="nextbtn" onclick="update()" class="btn btn-success">Continue</button>
+            <button id="newbtn" onclick="newpage()" class="btn btn-success">Next</button>
+            
+
+        </div>
+    
+
+        </center>   
+
+        <script>
+
+            var images = ["Assests/1.jpg", "Assests/2.jpg", "Assests/3.jpg", "Assests/4.jpg", "Assests/5.jpg", "Assests/6.jpg", "Assests/7.jpg", "Assests/8.jpg", "Assests/9.jpg", "Assests/10.jpg", "Assests/11.jpg", "Assests/12.jpg","Assests/13.jpg","Assests/14.jpg","Assests/15.jpg"];
+            var para=["Shoes—we wear them nearly every day. We walk, run, jump, climb, and stand in them for hours on end. Yet we hardly think about them because they are such an ordinary part of our daily lives. Shoes were not always an important part of people’s wardrobes. The ancient Greeks, Egyptians, and Persians made and wore sandals, but actually went barefoot most of the time. These people lived in regions where the weather was temperate, and shoes were not needed to keep their feet warm. Archaeologists have found shoes in the ruins of these civilizations",
+                    
+                      "<span style='background-color: aqua;'>PQ-</span><br> <br> 1. Which nationalities are mentioned in the paragraph you have just read? <br><br> Ans: Greeks, Egyptians and Persians.",
+
+                      "<img src='3th.jpg' style='width: 100%;'  alt=''>",
+
+                      "<img src='4th.jpg' style='width: 100%;'  alt=''>",
+
+
+                      "<img src='5th.jpg' style='width: 100%;'  alt=''>",
+
+                      "<img src='6th.jpg' style='width: 100%;'  alt=''>",
+
+                      
+
+                      
+
+
+                      "● Let us now understand what are OBJECTS in the English Language : <br><br> <u> Objects are always nouns or Pronouns.</u><br><br>In English grammar, an indirect object is the word or phrase that receives the direct object. <br><br> In the sentence<b style='font-weight: bolder;'>The students gave the teacher flowers.</b> The subject is student The indirect object is the teacher. The direct object is flowers.<span style='background-color: aqua;'>Indirect objects always depend on direct objects</span>",
+
+
+                      "In ancient Egypt, the easiest way to make shoes was to use materials that were readily available, including tree bark, leaves, and grasses. In ancient Egypt, sandals were made of rushes, which are grassy plants with hollow stalks. Rushes are the same plants used today to make chair bottoms, mats, and baskets.",
+
+                      "Greeks caused the evolution of shoes by making sandals with leather from the hides of animals. The first Greek shoes were purely functional. Over time, the Greeks dyed and decorated their shoes to make fashion statements. Women began to wear soft, enclosed leather shoes, and these grew increasingly fancy in the later years of the Greek civilization.",
+
+
+                      "<span style='background-color: aqua;'>PQ-</span><br> <br> What were the sandals in ancient Egypt made of? <br> <br> Ans: In Egypt sandals were made of rushes, which are grassy plants with hollow stalks. <br><br> What grew increasingly fancy in the later years of Greek civilization? <br><br> Ans: Soft, enclosed leather shoes worn by women grew increasingly fancy in the later years of the Greek civilization.",
+
+                      "<img src='11th.jpg' style='width: 100%;'  alt=''>",
+
+
+                    
+
+
+                      "In Rome shoemakers often dyed sandals in bright colours that represented the different jobs held by the people wearing them. The patricians, or privileged classes, wore red sandals with moon-shaped ornaments on the back. Senators wore brown shoes with four black leather straps wound around the lower leg. Consuls, or legal officers, wore white shoes, and soldiers wore heavy leather sandals that were more like boots—but with bare toes!",
+
+
+                      "Meanwhile, people who lived in cold northern climates were making their shoes from the hides of furry animals, such as polar bears and yaks. The soles and tops of these shoes were made from pieces of soft leather sewn together. This type of shoe—whether or not it used fur—was called a moccasin. Some Native American groups made and wore moccasins for thousands of years. Some moccasins were plain, and others were adorned with beadwork.",
+
+
+                      "<span style='background-color: aqua;'>PQ-</span><br><br> Q1) Who wore red sandals with moon-shaped ornaments on the back? <br> Ans: The patricians, or privileged classes <br> <br> Q2) Who made and wore moccasins for thousands of years?<br> Ans: Some Native American groups <br><br> Q3) What did Senators wear? <br> Ans: Senators wore brown shoes with four black leather straps wound around the lower leg.", 
+
+                     "<img src='15th.jpg' style='width: 100%;'  alt=''>",
+
+                    ]
+            
+            
+            var i = -1;
+            function update(){
+                i++
+                document.getElementById("backbtn").style.display="inline-block"
+                if(i > para.length-1){
+                    document.getElementById("nextbtn").style.display="none"
+                    document.getElementById("newbtn").style.display="inline-block"
+                    document.getElementById("family").src = "last.jpg";
+                    document.getElementById("story").style.fontSize="22px"
+                    document.getElementById("story").style.borderLeftStyle="solid"
+                    document.getElementById("story").style.borderLeftColor="rgb(164, 246, 229)"
+                    document.getElementById("about").innerHTML = "Summary of the Non-fiction passage:";
+                    document.getElementById("story").innerHTML = " Today we read that shoes have a long history on this planet. We read that people from various nations like Persia, Egypt, Rome, Greece and Native America caused the evolution of shoes- from not being an important part of the wardrobe to an absolute necessity till a fashion statement. We also came to know the various materials that were used to make these shoes like grass, leather from the hides of animals and fur from the same etc. We also observed that during ancient times too people wore different shoes dependending on their profession and social class.";
+                }
+                else{
+                    document.getElementById("story").style.fontSize="22px"
+                    document.getElementById("story").style.backgroundColor="white"
+                    document.getElementById("about").innerHTML="Shoes in Early Civilizations"
+                     var updated_image = images[i]; 
+                var newpara =para[i];
+                document.getElementById("family").src = updated_image;
+                document.getElementById("story").innerHTML = newpara;
+              
+            }
+            };
+
+            function newpage(){
+                window.location="ac2.html"
+            }
+
+            function backpic(){
+                i=i-1
+                console.log(i)
+
+                if(i<0){
+                    document.getElementById("story").style.fontSize="18px"
+                   // document.getElementById("story").style.backgroundColor="lightblue"
+                    document.getElementById("backbtn").style.display="none"
+                    document.getElementById("nextbtn").style.display="inline-block"
+                    document.getElementById("family").src = "pic2.jpg";
+                    document.getElementById("about").innerHTML="VERBS"
+                    document.getElementById("story").innerHTML = 'In simple terms,Transitive Verbs are those that take objects and Intransitive Verbs are those that do not take objects.Let us look the following sentences: <br><br>  1) I bought chocolates.<br> 2) She is sleeping.<br><br> In the first sentences the object “chocolates” is needed to make  sense of the verb “bought”. <br><br>In the second sentence the verb “sleeping” does not need any object to make clear sense. <br><br>  Thus, the verb “bought” is a transitive verb and the verb “sleeping” is an intransitive verb.  <br><br>';
+                }
+                else{
+                document.getElementById("story").style.fontSize="22px"
+                document.getElementById("story").style.backgroundColor="white"
+                document.getElementById("nextbtn").style.display="inline-block"
+                var updated_image = images[i]; 
+                var newpara =para[i];
+                document.getElementById("family").src = updated_image;
+                document.getElementById("story").innerHTML = newpara;
+                }
+            }
+
+    
+    </script>
+        
+    </body>
+</html>
